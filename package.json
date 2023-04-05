@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "nodemon webpack",
-    "start": "webpack-dev-server --mode development"
+    "build": "webpack",
+    "start:server": "nodemon --watch app app/server.js",
+    "start:client:dev": "webpack-dev-server --mode development"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,7 @@
   "dependencies": {
     "@types/react": "^18.0.32",
     "@types/react-dom": "^18.0.11",
+    "express": "^4.18.2",
     "nodemon": "^2.0.22",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

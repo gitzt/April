@@ -13,11 +13,12 @@ module.exports = {
     extensions: [".ts", ".tsx", ".js", ".json", ".scss"],
   },
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'public'),
-    },
-    compress: true,
+    compress: false,
+    hot: true,
     port: 9000,
+    // static: {
+    //   directory: path.join(__dirname, 'public'),
+    // },
   },
   module: {
     rules: [
